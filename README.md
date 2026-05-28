@@ -330,11 +330,11 @@ const scenes = [
   {
     id: 0, zone: "ZONA 1", diff: "NORMAL", diffClass: "tag-blue",
     title: "El inicio de la misión",
-    text: "Eres un pixel heroico en un mundo 8-bit. Tu misión: llegar hasta Amor, atrapado/a en la Torre del Meme Final. El guardián del portal bloquea el camino y pregunta: '¿Cuál es el verdadero poder del amor?'",
+    text: "Eres un pixel heroico en un mundo 8-bit. Tu misión: llegar hasta Amor, atrapada en la Torre del Final. El guardián del portal bloquea el camino y pregunta: '¿Cuál es el verdadero poder del amor?'",
     choices: [
       { text: "A) Un abrazo en el momento correcto", pts: 20, hp: 0, next: 1, msg: "¡Respuesta legendaria! El guardián llora y abre el portal." },
       { text: "B) El amor es un bug emocional sin solución", pts: 5, hp: -15, next: 1, msg: "El guardián se ofende un poco, pero te deja pasar igual." },
-      { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: 10, hp: -10, next: 1, msg: "El guardián, confundido, se aparta. Funciona a veces." }
+      { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: -20, hp: -25, next: 1, msg: "El guardián, confundido, se aparta." }
     ]
   },
   {
@@ -343,7 +343,7 @@ const scenes = [
     text: "Estás en el Laberinto de los Mensajes No Leídos. Hay 47 notificaciones sin responder. Una voz pregunta: '¿Cómo sobrevives a esto?'",
     choices: [
       { text: "A) Responder todas con un solo 'jajaja exacto'", pts: 15, hp: 5, next: 2, msg: "¡Inesperadamente efectivo! +5 puntos de sanidad mental." },
-      { text: "B) Fingir que no tienes wi-fi y desaparecer 3 días", pts: 5, hp: -20, next: 2, msg: "Riesgoso. Amor te manda una captura del 'en línea'." },
+      { text: "B) Fingir que no tienes wi-fi y desaparecer 3 días", pts: 5, hp: -25, next: 2, msg: "Riesgoso. Amor te manda una captura del 'en línea'." },
       { text: "C) Fácil: respondiéndole primero a mi novia", pts: 25, hp: 0, next: 2, msg: "¡Perfecto! Las demás notificaciones lloran de envidia." }
     ]
   },
@@ -352,8 +352,8 @@ const scenes = [
     title: "El jefe de la película de cita",
     text: "¡Aparece el Jefe Final: '¿Qué película ponen esta noche?' Un dilema terrible. Ambos tienen gustos distintos. El reloj corre.",
     choices: [
-      { text: "A) 'La que tú quieras, mi amor'... y te quedas dormido/a a los 10 min", pts: 10, hp: -5, next: 3, msg: "Clásico. Amor te tapa con una cobija de todas formas." },
-      { text: "B) Negociar: acción ahora, romántica el viernes", pts: 20, hp: 10, next: 3, msg: "¡Diplomacia nivel máximo! Ambos ganan." },
+      { text: "A) 'La que tú quieras, mi amor'... y te quedas dormido a los 10 min", pts: 5, hp: -5, next: 3, msg: "Clásico. Amor te tapa con una cobija de todas formas y se acuesta contigo" },
+      { text: "B) Negociar: acción ahora, romántica la siguiente", pts: 10, hp: 10, next: 3, msg: "¡Diplomacia nivel máximo! Ambos ganan." },
       { text: "C) Poner las dos a la vez en pantalla dividida", pts: 30, hp: 0, next: 3, msg: "Caos creativo. Nadie entiende nada pero es un recuerdo épico." }
     ]
   },
@@ -423,7 +423,7 @@ function showEnding() {
     msg = "Lo lograste. Con algún que otro traspié gracioso, llegaste hasta Amor. Se abrazan fuerte entre píxeles y confeti. No es el final perfecto, pero es el más auténtico. 🎉";
   } else {
     title = "Final B: Lo intentaste, eso cuenta";
-    msg = "Hubo caídas, respuestas dudosas y un dragón que casi te derrota. Pero llegaste. Amor te mira y dice: 'siguiente vez coordinamos mejor, ¿sí?' y sonríe. 😄";
+    msg = "Hubo caídas, respuestas dudosas y un dragón que casi te derrota. Pero llegaste. Amor te mira y dice: 'siguiente vez coordinamos mejor, ¿sí?' y sonríe.";
   }
   document.getElementById('scene-title').textContent = title;
   document.getElementById('scene-text').textContent = msg + '\n\nPuntuación final: ' + score + ' pts  |  Amor: ' + hp + '%';
