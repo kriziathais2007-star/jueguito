@@ -334,7 +334,7 @@ const scenes = [
     choices: [
       { text: "A) Un abrazo en el momento correcto", pts: 20, hp: 0, next: 1, msg: "¡Respuesta legendaria! El guardián llora y abre el portal." },
       { text: "B) El amor es un bug emocional sin solución", pts: 5, hp: -15, next: 1, msg: "El guardián se ofende un poco, pero te deja pasar igual." },
-      { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: -20, hp: -25, next: 1, msg: "El guardián, confundido, se aparta." }
+      { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: -20, hp: -100, next: 1, msg: "El guardián, confundido, se aparta." }
     ]
   },
   {
