@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -333,7 +332,7 @@ const scenes = [
     title: "El inicio de la misión",
     text: "Eres un pixel heroico en un mundo 8-bit. Tu misión: llegar hasta Amor, atrapado/a en la Torre del Meme Final. El guardián del portal bloquea el camino y pregunta: '¿Cuál es el verdadero poder del amor?'",
     choices: [
-      { text: "A) Que hace tolerar películas de 3 horas sin quejarse", pts: 20, hp: 0, next: 1, msg: "¡Respuesta legendaria! El guardián llora y abre el portal." },
+      { text: "A) Un abrazo en el momento correcto", pts: 20, hp: 0, next: 1, msg: "¡Respuesta legendaria! El guardián llora y abre el portal." },
       { text: "B) El amor es un bug emocional sin solución", pts: 5, hp: -15, next: 1, msg: "El guardián se ofende un poco, pero te deja pasar igual." },
       { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: 10, hp: -10, next: 1, msg: "El guardián, confundido, se aparta. Funciona a veces." }
     ]
@@ -344,8 +343,8 @@ const scenes = [
     text: "Estás en el Laberinto de los Mensajes No Leídos. Hay 47 notificaciones sin responder. Una voz pregunta: '¿Cómo sobrevives a esto?'",
     choices: [
       { text: "A) Responder todas con un solo 'jajaja exacto'", pts: 15, hp: 5, next: 2, msg: "¡Inesperadamente efectivo! +5 puntos de sanidad mental." },
-      { text: "B) Fingir que no tienes wifi y desaparecer 3 días", pts: 5, hp: -20, next: 2, msg: "Riesgoso. Amor te manda una captura del 'en línea'." },
-      { text: "C) Responder solo la de Amor con un corazoncito", pts: 25, hp: 0, next: 2, msg: "¡Perfecto! Las demás notificaciones lloran de envidia." }
+      { text: "B) Fingir que no tienes wi-fi y desaparecer 3 días", pts: 5, hp: -20, next: 2, msg: "Riesgoso. Amor te manda una captura del 'en línea'." },
+      { text: "C) Fácil: respondiéndole primero a mi novia", pts: 25, hp: 0, next: 2, msg: "¡Perfecto! Las demás notificaciones lloran de envidia." }
     ]
   },
   {
@@ -360,10 +359,10 @@ const scenes = [
   },
   {
     id: 3, zone: "ZONA FINAL", diff: "LEGENDARIO", diffClass: "tag-gold",
-    title: "La torre del meme final",
-    text: "¡Llegaste! En lo alto de la Torre del Meme Final, Amor te espera. Pero el Dragón del Olvido Aniversario bloquea el paso. Ruge: '¿Cuándo es nuestro aniversario?'",
+    title: "La torre del final",
+    text: "¡Llegaste! En lo alto de la Torre del Final, Amor te espera. Pero el Dragón del Olvido Aniversario bloquea el paso. Ruge: '¿Cuándo es nuestro aniversario?'",
     choices: [
-      { text: "A) Dar la fecha exacta más el día del primer meme que se enviaron", pts: 50, hp: 20, next: 4, msg: "EL DRAGÓN EXPLOTA EN CONFETI. Leyenda absoluta." },
+      { text: "A) Dar la fecha exacta y obtener el logro: ‘Memoria Nivel Dios’", pts: 50, hp: 20, next: 4, msg: "EL DRAGÓN EXPLOTA EN CONFETI. Leyenda absoluta." },
       { text: "B) Decir una fecha incorrecta con mucha confianza", pts: 5, hp: -30, next: 4, msg: "El dragón ríe malvado. Amor frunce el ceño desde arriba." },
       { text: "C) 'No sé la fecha exacta pero me acuerdo de cómo me sentí'", pts: 35, hp: 10, next: 4, msg: "El dragón llora. Nadie esperaba eso. Muy bien jugado." }
     ]
