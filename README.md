@@ -4,22 +4,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aventura del Amor 💕</title>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --pink: #D4537E;
+    --pink: #cf3a6c;
     --pink-light: #FBEAF0;
     --pink-dark: #993556;
     --blue: #378ADD;
     --blue-light: #E6F1FB;
     --green: #1D9E75;
-    --bg: #0d0d1a;
-    --bg2: #161628;
+    --bg: #41419b;
+    --bg2: #16162e;
     --bg3: #1e1e35;
     --border: rgba(212, 83, 126, 0.3);
     --text: #f0e8ff;
-    --text2: #a89bcc;
+    --text2: #c2b9db;
     --pixel: 'Press Start 2P', monospace;
     --body: 'Inter', sans-serif;
   }
@@ -293,9 +295,6 @@
     letter-spacing: 0.2em;
   }
 </style>
-</head>
-<body>
-
 <div id="game">
   <header>
     <div class="game-title">❤ AVENTURA DEL AMOR ❤</div>
@@ -326,15 +325,15 @@
 </div>
 
 <script>
-const scenes = [
+  const scenes = [
   {
     id: 0, zone: "ZONA 1", diff: "NORMAL", diffClass: "tag-blue",
     title: "El inicio de la misión",
     text: "Eres un pixel heroico en un mundo 8-bit. Tu misión: llegar hasta Amor, atrapada en la Torre del Final. El guardián del portal bloquea el camino y pregunta: '¿Cuál es el verdadero poder del amor?'",
     choices: [
       { text: "A) Un abrazo en el momento correcto", pts: 20, hp: 0, next: 1, msg: "¡Respuesta legendaria! El guardián llora y abre el portal." },
-      { text: "B) El amor es un bug emocional sin solución", pts: 5, hp: -15, next: 1, msg: "El guardián se ofende un poco, pero te deja pasar igual." },
-      { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: -20, hp: -100, next: 1, msg: "El guardián, confundido, se aparta." }
+      { text: "B) El amor es un bug emocional sin solución", pts: 10, hp: -25, next: 1, msg: "El guardián se ofende un poco, pero te deja pasar igual." },
+      { text: "C) Gritas: 'NO SÉ, DÉJAME PASAR'", pts: -20, hp: -50, next: 1, msg: "El guardián, confundido, se aparta." }
     ]
   },
   {
@@ -342,8 +341,8 @@ const scenes = [
     title: "El laberinto de las notificaciones",
     text: "Estás en el Laberinto de los Mensajes No Leídos. Hay 47 notificaciones sin responder. Una voz pregunta: '¿Cómo sobrevives a esto?'",
     choices: [
-      { text: "A) Responder todas con un solo 'jajaja exacto'", pts: 15, hp: 5, next: 2, msg: "¡Inesperadamente efectivo! +5 puntos de sanidad mental." },
-      { text: "B) Fingir que no tienes wi-fi y desaparecer 3 días", pts: 5, hp: -25, next: 2, msg: "Riesgoso. Amor te manda una captura del 'en línea'." },
+      { text: "A) Responder todas con un solo 'jajaja exacto'", pts: 15, hp: -25, next: 2, msg: "¡Inesperadamente efectivo! +5 puntos de sanidad mental." },
+      { text: "B) Fingir que no tienes wi-fi y desaparecer 3 días", pts: 10, hp: -50, next: 2, msg: "Riesgoso. Amor te manda una captura del 'en línea'." },
       { text: "C) Fácil: respondiéndole primero a mi novia", pts: 25, hp: 0, next: 2, msg: "¡Perfecto! Las demás notificaciones lloran de envidia." }
     ]
   },
@@ -363,8 +362,8 @@ const scenes = [
     text: "¡Llegaste! En lo alto de la Torre del Final, Amor te espera. Pero el Dragón del Olvido Aniversario bloquea el paso. Ruge: '¿Cuándo es nuestro aniversario?'",
     choices: [
       { text: "A) Dar la fecha exacta y obtener el logro: ‘Memoria Nivel Dios’", pts: 50, hp: 20, next: 4, msg: "EL DRAGÓN EXPLOTA EN CONFETI. Leyenda absoluta." },
-      { text: "B) Decir una fecha incorrecta con mucha confianza", pts: 5, hp: -30, next: 4, msg: "El dragón ríe malvado. Amor frunce el ceño desde arriba." },
-      { text: "C) 'No sé la fecha exacta pero me acuerdo de cómo me sentí'", pts: 35, hp: 10, next: 4, msg: "El dragón llora. Nadie esperaba eso. Muy bien jugado." }
+      { text: "B) Decir una fecha incorrecta con mucha confianza", pts: 5, hp: -50, next: 4, msg: "El dragón ríe malvado. Amor frunce el ceño desde arriba." },
+      { text: "C) 'No sé la fecha exacta pero me acuerdo de cómo me sentí'", pts: -25, hp: 10, next: 4, msg: "El dragón llora. Nadie esperaba eso. Muy bien jugado." }
     ]
   },
   { id: 4, ending: true }
